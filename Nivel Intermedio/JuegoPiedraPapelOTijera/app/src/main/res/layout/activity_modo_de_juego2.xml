@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModoDeJuego2">
+
+    <LinearLayout
+        android:id="@+id/viewJugadorMDJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jugador 1"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/eleccionMDJ2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contadorJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewJugadorMDJ2"/>
+
+    <LinearLayout
+        android:id="@+id/viewComputadorMDJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computadora"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/eleccionCpuMDJ2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contadorCpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewComputadorMDJ2"/>
+
+    <TextView
+        android:id="@+id/vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/viewJugadorMDJ2"
+        app:layout_constraintEnd_toStartOf="@+id/viewComputadorMDJ2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/viewJugadorMDJ2"/>
+
+    <LinearLayout
+        android:id="@+id/contenedorOpcionesMDJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vs"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/piedraMDJ2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/piedra"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/papelMDJ2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/papel"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/tijeraMDJ2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/tijera"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

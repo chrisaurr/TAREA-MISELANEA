@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ConversorUnidades</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="unidades">
+        <item>Kilometro</item>
+        <item>Metro</item>
+        <item>Centimetro</item>
+    </string-array>
+</resources>
